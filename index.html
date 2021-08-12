@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+           family Book
+        </title>
+
+    </head>
+    <body>
+        <center>
+            <h1>
+                My Family Book
+            </h1>
+
+    <img id="album" style="height: 300px; width: 200px;" src="book.family.png">
+    <div>
+        <button type="button" onclick="nextslide()">next</button>
+    </div>
+        <p id="name"> "my family" </p>
+    </center>
+    <script>
+        var name = ["father","mother","brother"];
+        var updatedImage =["father.jpeg","mother.png","brother.jpeg"];
+        var i = 0;
+        function nextslide() {document.getElementById("name").innerHTML = names[i];
+    document.getElementById("album").src = images[i];
+i++;
+if(i>2){i=0;}}
+console.log(image[1]);
+
+    </script>
+    </body>
+</html>
